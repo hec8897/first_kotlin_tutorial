@@ -1,9 +1,13 @@
 package com.example.kotlinapplication
 
 fun main(){
+//3. String Template
+    val name = "Dawoon";
+    val lastname = "Kim";
+    println("my name is ${name + lastname}")
 
-    helloWorld();
-    println(add(4,5))
+//    helloWorld();
+//    println(add(4,5))
 }
 
 // 1. 함수
