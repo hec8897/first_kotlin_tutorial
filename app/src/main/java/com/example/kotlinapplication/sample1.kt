@@ -1,14 +1,15 @@
 package com.example.kotlinapplication
 
-fun main(){
-//3. String Template
-    val name = "Dawoon";
-    val lastname = "Kim";
-    println("my name is ${name + lastname}")
 
-//    helloWorld();
-//    println(add(4,5))
-}
+//fun main(){
+////3. String Template
+//    val name = "Dawoon";
+//    val lastname = "Kim";
+//    println("my name is ${name + lastname}")
+//
+////    helloWorld();
+////    println(add(4,5))
+//}
 
 // 1. 함수
 
@@ -40,4 +41,42 @@ fun hi(){
     var d = 100
 
     val dawoon = "dawoon"
+}
+
+fun main(){
+    checkNum(1)
+}
+//4. 조건식
+
+fun maxBy(a:Int,b:Int) : Int {
+    if(a>b){
+        return  a
+    }
+    else{
+        return b
+    }
+}
+
+fun maxBy2(a:Int,b:Int) : Int = if(a>b) a else b
+
+fun checkNum(score : Int){
+    when(score){
+        0 -> println("0")
+        1 -> println("1")
+        2,3 -> println("2,3")
+        else -> println("no")
+    }
+
+    var b:Int = when(score){
+        1-> 1
+        2-> 2
+        else-> 3
+    }
+    println("b :${b}")
+
+    when(score){
+        in 90..100 -> println("good")
+        in 10..80 -> println("bad")
+        else -> println("ok")
+    }
 }
